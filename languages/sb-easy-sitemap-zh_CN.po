@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Sitemap\n"
+"POT-Creation-Date: 2017-06-27 00:37+0800\n"
+"PO-Revision-Date: 2017-06-27 00:39+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: index.php:16
+msgid "Posts"
+msgstr "文章"
+
+#: index.php:56
+msgid "Pages"
+msgstr "页面"
+
+#: index.php:69
+msgid "Products"
+msgstr "产品"
+
+#. Plugin Name of the plugin/theme
+msgid "Easy Sitemap"
+msgstr "站点地图"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://www.snowbedding.com/wordpress-easy-sitemap-plugin/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Create sitemap page by using shortcodes, separate shortcodes for posts, "
+"pages and woocommerce products."
+msgstr "使用短代码创建WordPress站点地图，包括 文章，页面 和 Woocommerce产品"
+
+#. Author of the plugin/theme
+msgid "snowbedding"
+msgstr ""

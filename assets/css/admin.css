@@ -1,0 +1,287 @@
+/* Easy Sitemap Admin Styles */
+
+.easy-sitemap-shortcodes-help {
+	max-width: 100%;
+}
+
+.easy-sitemap-shortcodes-help h3 {
+	color: #23282d;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.easy-sitemap-shortcodes-help h4 {
+	color: #23282d;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-size: 1.1em;
+}
+
+.easy-sitemap-shortcodes-help code {
+	background: #f1f1f1;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-family: Monaco, Consolas, monospace;
+	font-size: 0.9em;
+	color: #c7254e;
+}
+
+.easy-sitemap-shortcodes-help .easy-sitemap-examples {
+	background: #f9f9f9;
+	padding: 15px;
+	border-radius: 4px;
+	border-left: 4px solid #007cba;
+	margin: 15px 0;
+}
+
+.easy-sitemap-shortcodes-help .easy-sitemap-examples p {
+	margin: 8px 0;
+}
+
+.easy-sitemap-shortcodes-help .easy-sitemap-examples p strong {
+	color: #23282d;
+}
+
+.easy-sitemap-shortcodes-help table.widefat {
+	margin-top: 15px;
+}
+
+.easy-sitemap-shortcodes-help table.widefat th {
+	background: #f1f1f1;
+	font-weight: 600;
+	color: #23282d;
+}
+
+.easy-sitemap-shortcodes-help table.widefat td {
+	vertical-align: top;
+	padding: 8px 10px;
+}
+
+.easy-sitemap-shortcodes-help table.widefat td:first-child {
+	font-family: Monaco, Consolas, monospace;
+	font-weight: 600;
+	color: #c7254e;
+	background: #f9f9f9;
+}
+
+.easy-sitemap-shortcodes-help table.widefat tr:nth-child(even) td {
+	background: #f9f9f9;
+}
+
+/* Settings page tabs */
+.nav-tab-wrapper .nav-tab {
+	border-bottom: 3px solid transparent;
+}
+
+.nav-tab-wrapper .nav-tab.nav-tab-active {
+	border-bottom-color: #007cba;
+	background: #fff;
+}
+
+/* Form styling */
+.easy-sitemap-settings-section {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+/* Shortcode generator */
+.easy-sitemap-generator {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+}
+
+@media (min-width: 960px) {
+	.easy-sitemap-generator {
+		grid-template-columns: 2fr 1fr;
+	}
+}
+
+.easy-sitemap-generator__output textarea {
+	font-family: Monaco, Consolas, monospace;
+	font-size: 13px;
+}
+
+.easy-sitemap-settings-section h3 {
+	margin-top: 0;
+	color: #23282d;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+
+.easy-sitemap-settings-section h4 {
+	margin: 25px 0 15px 0;
+	color: #23282d;
+	font-size: 1.1em;
+	font-weight: 600;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+/* Generator input styling */
+.easy-sitemap-generator input[type="text"],
+.easy-sitemap-generator input[type="number"],
+.easy-sitemap-generator input[type="date"],
+.easy-sitemap-generator select {
+	max-width: 300px;
+}
+
+.easy-sitemap-generator .form-table td p.description {
+	margin-top: 5px;
+	font-size: 12px;
+	color: #666;
+}
+
+/* Inline input pairs */
+.easy-sitemap-generator .inline-inputs input {
+	display: inline-block !important;
+	width: calc(50% - 5px) !important;
+	max-width: none !important;
+}
+
+.easy-sitemap-generator .inline-inputs input:first-child {
+	margin-right: 10px;
+}
+
+/* Copy button styling */
+#esg_copy_button {
+	margin-top: 10px;
+	background: #007cba;
+	border-color: #007cba;
+	color: #fff;
+}
+
+#esg_copy_button.button-primary {
+	background: #46b450;
+	border-color: #46b450;
+}
+
+
+/* Attributes table */
+.easy-sitemap-attributes-table {
+	margin-top: 30px;
+}
+
+.easy-sitemap-attributes-table h4 {
+	color: #23282d;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 1.1em;
+}
+
+.easy-sitemap-attributes-table table.widefat {
+	margin-top: 15px;
+	border-collapse: collapse;
+}
+
+.easy-sitemap-attributes-table table.widefat th {
+	background: #f8f9fa;
+	font-weight: 600;
+	color: #23282d;
+	border-bottom: 2px solid #dee2e6;
+	padding: 12px 15px;
+	text-align: left;
+}
+
+.easy-sitemap-attributes-table table.widefat td {
+	padding: 10px 15px;
+	border-bottom: 1px solid #dee2e6;
+	vertical-align: top;
+}
+
+.easy-sitemap-attributes-table table.widefat td:first-child {
+	font-family: Monaco, Consolas, 'Courier New', monospace;
+	font-weight: 600;
+	color: #c7254e;
+	background: #f8f9fa;
+	width: 12%;
+}
+
+.easy-sitemap-attributes-table table.widefat td:nth-child(2) {
+	font-family: Monaco, Consolas, 'Courier New', monospace;
+	font-weight: 500;
+	color: #495057;
+	font-size: 0.9em;
+	line-height: 1.4;
+	width: 20%;
+}
+
+.easy-sitemap-attributes-table table.widefat td:nth-child(4) {
+	font-size: 0.95em;
+	line-height: 1.4;
+	width: 25%;
+}
+
+.easy-sitemap-attributes-table table.widefat td:nth-child(3) {
+	font-family: Monaco, Consolas, 'Courier New', monospace;
+	font-weight: 500;
+	color: #007cba;
+	font-size: 0.9em;
+}
+
+.easy-sitemap-attributes-table table.widefat td:nth-child(5) {
+	font-family: Monaco, Consolas, 'Courier New', monospace;
+	font-weight: 500;
+	color: #28a745;
+	font-size: 0.9em;
+}
+
+.easy-sitemap-attributes-table table.widefat tr:nth-child(even) {
+	background: #f8f9fa;
+}
+
+.easy-sitemap-attributes-table table.widefat tr:hover {
+	background: #e9ecef;
+}
+
+.easy-sitemap-attributes-table .description {
+	margin-top: 15px;
+	padding: 12px 15px;
+	background: #e7f3ff;
+	border: 1px solid #b8daff;
+	border-radius: 4px;
+	font-style: italic;
+	color: #004085;
+}
+
+/* Mobile responsiveness for admin */
+@media (max-width: 782px) {
+	.easy-sitemap-shortcodes-help table.widefat {
+		font-size: 14px;
+	}
+
+	.easy-sitemap-shortcodes-help table.widefat td,
+	.easy-sitemap-shortcodes-help table.widefat th {
+		padding: 6px 8px;
+	}
+
+	.easy-sitemap-examples {
+		padding: 10px;
+	}
+
+	.easy-sitemap-performance-tip {
+		padding: 12px;
+		font-size: 14px;
+	}
+
+	.easy-sitemap-attributes-table table.widefat {
+		font-size: 14px;
+	}
+
+	.easy-sitemap-attributes-table table.widefat td,
+	.easy-sitemap-attributes-table table.widefat th {
+		padding: 8px 10px;
+	}
+
+	.easy-sitemap-attributes-table .description {
+		padding: 10px;
+		font-size: 14px;
+	}
+}

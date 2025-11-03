@@ -1,0 +1,366 @@
+/* Easy Sitemap Frontend Styles */
+
+.easy-sitemap {
+	margin: 20px 0;
+	font-family: inherit;
+	line-height: 1.6;
+}
+
+.easy-sitemap-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.easy-sitemap-list li {
+	margin-bottom: 8px;
+	padding: 4px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.easy-sitemap-list li:last-child {
+	border-bottom: none;
+}
+
+.easy-sitemap-item {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.easy-sitemap-date {
+	color: #666;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+.easy-sitemap-item a {
+	text-decoration: none;
+	color: #007cba;
+	transition: color 0.2s ease;
+}
+
+.easy-sitemap-item a:hover {
+	color: #005a87;
+	text-decoration: underline;
+}
+
+.easy-sitemap-category {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 20px 0 10px 0;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #007cba;
+	color: #333;
+}
+
+.easy-sitemap-title {
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 25px 0 15px 0;
+	padding-bottom: 8px;
+	border-bottom: 3px solid #007cba;
+	color: #333;
+}
+
+.easy-sitemap-posts .easy-sitemap-category + .easy-sitemap-list {
+	margin-bottom: 30px;
+}
+
+.easy-sitemap-children {
+	margin-left: 20px;
+}
+
+.easy-sitemap-children .easy-sitemap-list li {
+	border-bottom: none;
+	margin-bottom: 4px;
+}
+
+/* Excerpt styles */
+.easy-sitemap-excerpt {
+	font-size: 0.9em;
+	color: #666;
+	margin-top: 4px;
+	line-height: 1.4;
+	display: block;
+}
+
+/* Image styles */
+.easy-sitemap-image-container {
+	margin-top: 8px;
+}
+
+.easy-sitemap-image {
+	max-width: 150px;
+	height: auto;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Loading states */
+.easy-sitemap-loading {
+	opacity: 0.6;
+	position: relative;
+}
+
+.easy-sitemap-loading::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	margin: -10px 0 0 -10px;
+	border: 2px solid #007cba;
+	border-top: 2px solid transparent;
+	border-radius: 50%;
+	animation: easy-sitemap-spin 1s linear infinite;
+}
+
+@keyframes easy-sitemap-spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* Search functionality */
+.easy-sitemap-search {
+	margin-bottom: 20px;
+}
+
+.easy-sitemap-search input[type="text"] {
+	padding: 8px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+	width: 100%;
+	max-width: 300px;
+}
+
+.easy-sitemap-search input[type="text"]:focus {
+	border-color: #007cba;
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(0,124,186,0.2);
+}
+
+/* No results message */
+.easy-sitemap-no-results {
+	padding: 20px;
+	text-align: center;
+	color: #666;
+	font-style: italic;
+	background-color: #f9f9f9;
+	border-radius: 4px;
+	margin: 20px 0;
+}
+
+/* Column layouts using CSS Grid with Flexbox fallback */
+.easy-sitemap-columns-2 .easy-sitemap-list,
+.easy-sitemap-columns-3 .easy-sitemap-list,
+.easy-sitemap-columns-4 .easy-sitemap-list,
+.easy-sitemap-columns-5 .easy-sitemap-list,
+.easy-sitemap-columns-6 .easy-sitemap-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: -webkit-box; /* Old Flexbox */
+	display: -ms-flexbox; /* IE 10 */
+	display: flex; /* Modern Flexbox */
+	display: -webkit-flex; /* Safari */
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+}
+
+/* CSS Grid for modern browsers */
+@supports (display: grid) {
+	.easy-sitemap-columns-2 .easy-sitemap-list,
+	.easy-sitemap-columns-3 .easy-sitemap-list,
+	.easy-sitemap-columns-4 .easy-sitemap-list,
+	.easy-sitemap-columns-5 .easy-sitemap-list,
+	.easy-sitemap-columns-6 .easy-sitemap-list {
+		display: grid;
+		flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+	}
+}
+
+.easy-sitemap-columns-2 .easy-sitemap-list {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.easy-sitemap-columns-3 .easy-sitemap-list {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.easy-sitemap-columns-4 .easy-sitemap-list {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.easy-sitemap-columns-5 .easy-sitemap-list {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.easy-sitemap-columns-6 .easy-sitemap-list {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+/* Column item styling */
+.easy-sitemap-columns-2 .easy-sitemap-item,
+.easy-sitemap-columns-3 .easy-sitemap-item,
+.easy-sitemap-columns-4 .easy-sitemap-item,
+.easy-sitemap-columns-5 .easy-sitemap-item,
+.easy-sitemap-columns-6 .easy-sitemap-item {
+	margin: 0;
+	padding: 8px 0;
+	break-inside: avoid;
+	page-break-inside: avoid;
+}
+
+/* Flexbox column widths for fallback */
+.easy-sitemap-columns-2 .easy-sitemap-item {
+	width: calc(50% - 20px);
+	margin-right: 20px;
+}
+
+.easy-sitemap-columns-3 .easy-sitemap-item {
+	width: calc(33.333% - 15px);
+	margin-right: 15px;
+}
+
+.easy-sitemap-columns-4 .easy-sitemap-item {
+	width: calc(25% - 12px);
+	margin-right: 12px;
+}
+
+.easy-sitemap-columns-5 .easy-sitemap-item {
+	width: calc(20% - 10px);
+	margin-right: 10px;
+}
+
+.easy-sitemap-columns-6 .easy-sitemap-item {
+	width: calc(16.666% - 8px);
+	margin-right: 8px;
+}
+
+/* Reset margins for every 2nd, 3rd, etc. item in flexbox */
+.easy-sitemap-columns-2 .easy-sitemap-item:nth-child(2n),
+.easy-sitemap-columns-3 .easy-sitemap-item:nth-child(3n),
+.easy-sitemap-columns-4 .easy-sitemap-item:nth-child(4n),
+.easy-sitemap-columns-5 .easy-sitemap-item:nth-child(5n),
+.easy-sitemap-columns-6 .easy-sitemap-item:nth-child(6n) {
+	margin-right: 0;
+}
+
+
+/* Responsive column adjustments */
+@media (max-width: 1024px) {
+	.easy-sitemap-columns-4 .easy-sitemap-list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.easy-sitemap-columns-4 .easy-sitemap-item {
+		width: calc(33.333% - 15px);
+		margin-right: 15px;
+	}
+	.easy-sitemap-columns-4 .easy-sitemap-item:nth-child(4n) {
+		margin-right: 0;
+	}
+
+	.easy-sitemap-columns-5 .easy-sitemap-list,
+	.easy-sitemap-columns-6 .easy-sitemap-list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.easy-sitemap-columns-5 .easy-sitemap-item,
+	.easy-sitemap-columns-6 .easy-sitemap-item {
+		width: calc(33.333% - 15px);
+		margin-right: 15px;
+	}
+	.easy-sitemap-columns-5 .easy-sitemap-item:nth-child(3n),
+	.easy-sitemap-columns-6 .easy-sitemap-item:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.easy-sitemap-columns-3 .easy-sitemap-list,
+	.easy-sitemap-columns-4 .easy-sitemap-list,
+	.easy-sitemap-columns-5 .easy-sitemap-list,
+	.easy-sitemap-columns-6 .easy-sitemap-list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.easy-sitemap-columns-3 .easy-sitemap-item,
+	.easy-sitemap-columns-4 .easy-sitemap-item,
+	.easy-sitemap-columns-5 .easy-sitemap-item,
+	.easy-sitemap-columns-6 .easy-sitemap-item {
+		width: calc(50% - 15px);
+		margin-right: 15px;
+	}
+	.easy-sitemap-columns-3 .easy-sitemap-item:nth-child(2n),
+	.easy-sitemap-columns-4 .easy-sitemap-item:nth-child(2n),
+	.easy-sitemap-columns-5 .easy-sitemap-item:nth-child(2n),
+	.easy-sitemap-columns-6 .easy-sitemap-item:nth-child(2n) {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.easy-sitemap-columns-2 .easy-sitemap-list,
+	.easy-sitemap-columns-3 .easy-sitemap-list,
+	.easy-sitemap-columns-4 .easy-sitemap-list,
+	.easy-sitemap-columns-5 .easy-sitemap-list,
+	.easy-sitemap-columns-6 .easy-sitemap-list {
+		grid-template-columns: 1fr;
+		flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+	}
+	.easy-sitemap-columns-2 .easy-sitemap-item,
+	.easy-sitemap-columns-3 .easy-sitemap-item,
+	.easy-sitemap-columns-4 .easy-sitemap-item,
+	.easy-sitemap-columns-5 .easy-sitemap-item,
+	.easy-sitemap-columns-6 .easy-sitemap-item {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+/* Print styles */
+@media print {
+	.easy-sitemap-item a {
+		color: #000 !important;
+		text-decoration: none !important;
+	}
+
+	.easy-sitemap-date {
+		color: #333 !important;
+	}
+
+	.easy-sitemap-category,
+	.easy-sitemap-title {
+		color: #000 !important;
+		page-break-after: avoid;
+	}
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+	.easy-sitemap-item a {
+		text-decoration: underline;
+	}
+
+	.easy-sitemap-list li {
+		border-bottom-color: #000;
+	}
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+	.easy-sitemap-item a {
+		transition: none;
+	}
+
+	.easy-sitemap-loading::after {
+		animation: none;
+	}
+}
