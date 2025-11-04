@@ -6,7 +6,7 @@
  * Version: 2.0.0
  * Author: snowbedding
  * Author URI: https://github.com/snowbedding
- * Text Domain: easy-sitemap
+ * Text Domain: snowbedding-easy-sitemap
  * Domain Path: /languages
  * License: GPLv2 or later
  * Requires at least: 5.0

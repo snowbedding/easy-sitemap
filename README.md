@@ -254,8 +254,8 @@ classes/
 │       ├── admin.js            # Admin functionality
 │       └── frontend.js         # Frontend interactions
 ├── languages/
-│   ├── sb-easy-sitemap-zh_CN.mo # Chinese translations (compiled)
-│   └── sb-easy-sitemap-zh_CN.po # Chinese translations (source)
+│   ├── snowbedding-easy-sitemap-zh_CN.mo # Chinese translations (compiled)
+│   └── snowbedding-easy-sitemap-zh_CN.po # Chinese translations (source)
 └── index.php                   # Plugin entry point
 ```
 
@@ -306,7 +306,7 @@ add_filter( 'easy_sitemap_supported_post_types', function( $post_types ) {
 
 ### Internationalization
 
-- Text domain: `easy-sitemap`
+- Text domain: `snowbedding-easy-sitemap`
 - Translation files: `languages/` directory
 - Currently includes Chinese (zh_CN) translations
 - Fully translatable admin interface and frontend output
