@@ -316,7 +316,7 @@ add_filter( 'easy_sitemap_supported_post_types', function( $post_types ) {
 Licensed under the GNU General Public License v2.0 or later.
 
 ```
-Copyright (C) 2024 pandasilk
+Copyright (C) 2025 snowbedding
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
