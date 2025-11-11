@@ -25,7 +25,7 @@ msgstr ""
 #: classes/Admin/Admin.php:38
 #: classes/Admin/Admin.php:115
 msgid "Easy Sitemap"
-msgstr "Easy Sitemap 站点地图"
+msgstr "站点地图"
 
 #. Plugin URI of the plugin
 #: index.php
