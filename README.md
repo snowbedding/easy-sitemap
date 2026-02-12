@@ -19,6 +19,12 @@
 - **SEO Friendly**: Clean, semantic markup with proper structure
 - **Quicktags Support**: Classic editor integration for easy shortcode insertion
 
+## 📸 Screenshots
+
+| Screenshot 1 | Screenshot 2 | Screenshot 3 |
+|--------------|--------------|--------------|
+| ![Screenshot 1](screenshot-1.jpg) | ![Screenshot 2](screenshot-2.jpg) | ![Screenshot 3](screenshot-3.jpg) |
+
 ## 📋 Requirements
 
 - **WordPress**: 5.0+
