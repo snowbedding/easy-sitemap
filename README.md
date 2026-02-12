@@ -1,6 +1,6 @@
 # Easy Sitemap (WordPress Plugin)
 
-Advanced HTML sitemap generator for WordPress with modern PSR-4 autoloading, OOP architecture, intelligent caching, and extensive customization options.
+[Advanced HTML sitemap generator for WordPress](https://wordpress.org/plugins/easy-sitemap/) with modern PSR-4 autoloading, OOP architecture, intelligent caching, and extensive customization options.
 
 ## ✨ Features
 
